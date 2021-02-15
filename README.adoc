@@ -49,3 +49,9 @@ z - select `char cz` +
 I - printf selected `int` +
 C - printf selected `char` +
 . - terminate processing +
+ +
+Prerequisites:
+
+* GNU Bash
+* C compiler (GCC or Clang are preferred)
+* C library
