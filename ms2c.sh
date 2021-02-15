@@ -162,6 +162,7 @@ usage() {
 		echo -e "\tOptions:"
 		echo -e "\t\t-c: Compile generated C source code"
 		echo -e "\t\t-r: Run compiled binary"
+		echo -e "\t\t-h: Display this help message
 		echo "${PRGNAM} version ${VERSION}"
 }
 # the parser
@@ -270,7 +271,8 @@ parse() {
 # now some basic stuff
 DO_COMPILE=""
 DO_RUN=""
-while getopts c:r: opt
+DO_HELP=""
+while getopts c:r:h: opt
 do
 	case "${opt}" in
 		"c")
@@ -278,6 +280,9 @@ do
 			;;
 		"r")
 			DO_RUN="yes"
+			;;
+		"h")
+			DO_HELP="yes"
 			;;
 		*)
 			true
@@ -298,6 +303,8 @@ if [ -n "${1}" ]; then
 			run_binary "${1}"
 		fi
 		echo "==> TRANSPILER COMPLETED SUCCESSFULLY"
+	elif [ "${DO_HELP}" == "yes" ]; then
+		usage
 	else
 		echo "==> !ERROR!"
 		echo "==> \"${1}\" MUST BE A FILE"
