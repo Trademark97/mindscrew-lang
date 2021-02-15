@@ -157,12 +157,11 @@ ins_endboil() {
 }
 # show usage
 usage() {
-	printf '%s' \
-		"\nUsage: ms2c <sourcefile.ms> [-c -r]\n" \
-		"\tOptions:\n" \
-		"\t\t-c: Compile generated C source code\n" \
-		"\t\t-r: Run compiled binary\n" \
-		"ms2c version ${VERSION}\n"
+		echo -e "Usage: ms2c <sourcefile.ms> [-c -r]"
+		echo -e "\tOptions:"
+		echo -e "\t\t-c: Compile generated C source code"
+		echo -e "\t\t-r: Run compiled binary"
+		echo "ms2c version ${VERSION}"
 }
 # the parser
 parse() {
