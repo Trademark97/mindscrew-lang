@@ -1,6 +1,7 @@
 #!/bin/bash
 
 VERSION="0.1.99"
+PRGNAM="ms2c"
 
 # int vars
 INT_0="int i0 = 0;"
@@ -157,11 +158,11 @@ ins_endboil() {
 }
 # show usage
 usage() {
-		echo -e "Usage: ms2c <sourcefile.ms> [-c -r]"
+		echo -e "Usage: ${PRGNAM} <sourcefile.ms> [-c -r]"
 		echo -e "\tOptions:"
 		echo -e "\t\t-c: Compile generated C source code"
 		echo -e "\t\t-r: Run compiled binary"
-		echo "ms2c version ${VERSION}"
+		echo "${PRGNAM} version ${VERSION}"
 }
 # the parser
 parse() {
