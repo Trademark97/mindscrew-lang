@@ -1,0 +1,26 @@
+ms2c Changes
+------------
+
+Version 0.2 (15 Feb 2021)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Code Changes
+^^^^^^^^^^^^
+
+* Add `VERSION` var and use its value in `usage()`
+* Add `PRGNAM` (program name) var and use its value in `usage()`
+
+Features
+^^^^^^^^
+
+* Add command-line option to display `usage()` (-h)
+
+Bugfixes
+^^^^^^^^
+
+* Rewrite usage() function to use `echo` and `echo -e` instead of `printf`, which fixes all the output being on the same line :p
+
+Version 0.1 (14 Feb 2021)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Initial release
