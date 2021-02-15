@@ -160,7 +160,7 @@ usage() {
 		"\tOptions:\n" \
 		"\t\t-c: Compile generated C source code\n" \
 		"\t\t-r: Run compiled binary\n" \
-		"ms2c version 0.01\n"
+		"ms2c version 0.1\n"
 }
 # the parser
 parse() {
