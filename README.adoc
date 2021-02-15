@@ -1,0 +1,51 @@
+# mindscrew-lang
+The Mindscrew Esoteric Programming Language
+
+Explaining the Mindscrew Esoteric Programming Language
+
+Basics:
+
+10 pointers of type `int` +
+26 pointers of type `char` +
+Following operators: +
+1 - select `int i1` +
+2 - select `int i2` +
+3 - select `int i3` +
+4 - select `int i4` +
+5 - select `int i5` +
+6 - select `int i6` +
+7 - select `int i7` +
+8 - select `int i8` +
+9 - select `int i9` +
+0 - select `int i0` +
+a - select `char ca` +
+b - select `char cb` +
+c - select `char cc` +
+d - select `char cd` +
+e - select `char ce` +
+f - select `char cf` +
+g - select `char cg` +
+h - select `char ch` +
+i - select `char ci` +
+j - select `char cj` +
+k - select `char ck` +
+l - select `char cl` +
+m - select `char cm` +
+n - select `char cn` +
+o - select `char co` +
+p - select `char cp` +
+q - select `char cq` +
+r - select `char cr` +
+s - select `char cs` +
+t - select `char ct` +
+u - select `char cu` +
+v - select `char cv` +
+w - select `char cw` +
+x - select `char cx` +
+y - select `char cy` +
+z - select `char cz` +
+"+" - increment selected var by 1 +
+"-" - decrement selected var by 1 +
+I - printf selected `int` +
+C - printf selected `char` +
+. - terminate processing +
