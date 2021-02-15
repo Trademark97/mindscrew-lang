@@ -1,4 +1,4 @@
-# mindscrew-lang
+# mindscrew-lang v0.2
 The Mindscrew Esoteric Programming Language
 
 Explaining the Mindscrew Esoteric Programming Language
