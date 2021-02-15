@@ -1,5 +1,7 @@
 #!/bin/bash
 
+VERSION="0.1.99"
+
 # int vars
 INT_0="int i0 = 0;"
 INT_1="int i1 = 0;"
@@ -160,7 +162,7 @@ usage() {
 		"\tOptions:\n" \
 		"\t\t-c: Compile generated C source code\n" \
 		"\t\t-r: Run compiled binary\n" \
-		"ms2c version 0.1\n"
+		"ms2c version ${VERSION}\n"
 }
 # the parser
 parse() {
