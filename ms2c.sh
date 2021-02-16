@@ -248,6 +248,36 @@ parse() {
 			"z")
 				CUR_VAR="${REF_z}"
 				;;
+			"0")
+				CUR_VAR="${REF_0}"
+				;;
+			"1")
+				CUR_VAR="${REF_1}"
+				;;
+			"2")
+				CUR_VAR="${REF_2}"
+				;;
+			"3")
+				CUR_VAR="${REF_3}"
+				;;
+			"4")
+				CUR_VAR="${REF_4}"
+				;;
+			"5")
+				CUR_VAR="${REF_5}"
+				;;
+			"6")
+				CUR_VAR="${REF_6}"
+				;;
+			"7")
+				CUR_VAR="${REF_7}"
+				;;
+			"8")
+				CUR_VAR="${REF_8}"
+				;;
+			"9")
+				CUR_VAR="${REF_9}"
+				;;
 			"+")
 				echo -n "${CUR_VAR}++;" >> "${1}.c"
 				;;
