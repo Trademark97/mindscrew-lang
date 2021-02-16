@@ -162,7 +162,7 @@ usage() {
 		echo -e "\tOptions:"
 		echo -e "\t\t-c: Compile generated C source code"
 		echo -e "\t\t-r: Run compiled binary"
-		echo -e "\t\t-h: Display this help message
+		echo -e "\t\t-h: Display this help message"
 		echo "${PRGNAM} version ${VERSION}"
 }
 # the parser
