@@ -1,6 +1,7 @@
 #!/bin/bash
+# shellcheck disable=SC2129
 
-VERSION="0.2"
+VERSION="0.3"
 PRGNAM="ms2c"
 
 # int vars
@@ -168,7 +169,7 @@ usage() {
 # the parser
 parse() {
 	echo "===> PARSING \"${1}\""
-	while read -n1 chr; do
+	while read -n1 -r chr; do
 		case "${chr}" in
 			"a")
 				CUR_VAR="${REF_a}"
@@ -279,10 +280,10 @@ parse() {
 				CUR_VAR="${REF_9}"
 				;;
 			"+")
-				echo -n "${CUR_VAR}++;" >> "${1}.c"
+				echo -n "${CUR_VAR}${INST_INCR};" >> "${1}.c"
 				;;
 			"-")
-				echo -n "${CUR_VAR}--;" >> "${1}.c"
+				echo -n "${CUR_VAR}${INST_DECR};" >> "${1}.c"
 				;;
 			"C")
 				echo -n "${INST_PRNC}${CUR_VAR});" >> "${1}.c"
@@ -290,7 +291,7 @@ parse() {
 			"I")
 				echo -n "${INST_PRNI}${CUR_VAR});" >> "${1}.c"
 				;;
-			".")
+			"${INST_TERM}")
 				echo "===> TERMINATING PARSING"
 				break 2
 				;;
