@@ -1,6 +1,40 @@
 ms2c Changes
 ------------
 
+Version 1.0 (XX XXX 202X)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Code Changes (planned)
+^^^^^^^^^^^^^^^^^^^^^^
+* Add variable to specify language to transpile to (this is in preparation to support target languages other than `C`)
+
+Features (planned)
+^^^^^^^^^^^^^^^^^^
+* Add support for the following languages as transpilation targets
+** `C++`
+** `D`
+** `OCaml` _(tentative)_
+** `Rust` _(tentative)_
+** `Brainf***` _(because why the f$$***$$ not)_
+
+Version 0.4 (XX XXX 2022)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Code Changes (planned)
+^^^^^^^^^^^^^^^^^^^^^^
+* Add character to suspend interpretation
+** This will be used to support plain-text commenting (like Brainf***)
+
+Version 0.3 (03 Feb 2022)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Code Changes
+^^^^^^^^^^^^
+
+* Fix issues found by ShellCheck
+** Unused variables that were found are now actually used
+** Added `-r` to `read` to ensure that backslashes don't get mangled
+
 Version 0.2 (15 Feb 2021)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
